@@ -15,9 +15,24 @@
  */
 
 #include <iostream>
-
+/**
+ * Crea un archivo.
+ *
+ * @param El nombre del archivo a crear.
+ * @return Nada, sólo crea el archivo.
+ */
 void CrearArchivo(std::string nombre_archivo_2);
-
+/**
+ * Encripta una letra mediante el método César usando un parámetro dado por el usuario.
+ *
+ * @param Una letra y el valor de un parámetro.
+ * @return La letra modificada por el método César.
+ */
 char EncriptarCesar(char letra, int k);
-
+/**
+ *Desencripta una letra mediante el método César usando un parámetro dado por el usuario.
+ *
+ * @param Una letra y el valor de un parámetro.
+ * @return La letra modificada por el método César.
+ */
 char DesencriptarCesar(char letra, int k);
