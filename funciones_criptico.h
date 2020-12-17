@@ -4,12 +4,12 @@
  * Grado en Ingeniería Informática
  * Informática Básica
  *
- * @file encriptar.cc
+ * @file funciones_criptico.h
  * @author: Marlon Eduardo Salazar Amador
  * @date: 15 nov 2020
- * @brief description: Este programa permite al usuario encriptar y desencriptar el
- * contenido de un documento de texto en un nuevo archivo utilizando el código de
- * César
+ * @brief description: Este archivo incluye las declaraciones de las funciones
+ * definidas en el archivo funciones_criptico.cc que son utilizadas en el archivo
+ * cripto.cc
  * @bug No hay bugs conocidos
  * @see https://www.cs.cmu.edu/~410/doc/doxygen.html
  */
