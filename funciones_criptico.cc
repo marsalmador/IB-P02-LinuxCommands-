@@ -25,6 +25,10 @@ void CrearArchivo(std::string nombre_archivo_2){
   archivo.open(nombre_archivo2.c_str(), std::ios::out);
 }
 
+/**
+ * En esta función se hace uso del Código ASCII para llevar a cabo
+ * la encriptación.
+ */
 char EncriptarCesar(char letra, int k){
   char resultado;
   if(letra!=char(32)){
@@ -41,6 +45,11 @@ char EncriptarCesar(char letra, int k){
 return resultado;
 }
 
+/**
+ * Sigue el mismo proceso que la función de encriptar pero cambiando
+ * el signo del parámetro K, pues el proceso a seguir es el inverso
+ * si se desea descodificar el mensaje.
+ */
 char DesencriptarCesar(char letra, int k){
   char resultado;
   if(letra!=char(32)){
