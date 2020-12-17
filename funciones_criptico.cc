@@ -21,12 +21,12 @@
 #include <fstream>
 #include "funciones_cripto.h"
 
-void crearArchivo(std::string nombre_archivo2){
+void CrearArchivo(std::string nombre_archivo_2){
   std::ofstream archivo;
   archivo.open(nombre_archivo2.c_str(), std::ios::out);
 }
 
-char encriptarCesar(char letra, int k){
+char EncriptarCesar(char letra, int k){
   char resultado;
   if(letra!=char(32)){
     if(isupper(letra)){
@@ -42,7 +42,7 @@ char encriptarCesar(char letra, int k){
   return resultado;
 }
 
-char desencriptarCesar(char letra, int k){
+char DesencriptarCesar(char letra, int k){
   char resultado;
   if(letra!=char(32)){
     if(isupper(letra)){
