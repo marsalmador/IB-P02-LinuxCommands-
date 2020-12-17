@@ -9,7 +9,8 @@
  * @date: 15 nov 2020
  * @brief description: Este programa permite al usuario encriptar y desencriptar el
  * contenido de un documento de texto en un nuevo archivo utilizando el código de
- * César
+ * César. Para ello, el usuario debe introducir una serie de datos en la forma dada
+ * por el comando "--help"
  * @bug No hay bugs conocidos
  * @see https://www.cs.cmu.edu/~410/doc/doxygen.html
  */
@@ -83,7 +84,7 @@ if(argc==6 && (strcmp(argv[3], "2") == 0) && (strcmp(argv[5], "-") == 0)) {
       while (!fichero.eof()) {
          char *lk = argv[4];
          int nk = atoi(lk);
-         salida << desencriptarCesar(letra, nk);
+         salida << DesencriptarCesar(letra, nk);
          fichero.get(letra);
   }
   fichero.close();
