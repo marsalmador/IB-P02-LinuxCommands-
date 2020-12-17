@@ -60,17 +60,17 @@ int main(int argc, char* argv[]) {
     if(!fichero.eof()) {
       fichero.get(letra);
       while (!fichero.eof()) {
-         char *valor_k_char = argv[4];
-         int valor_k_int = atoi(valor_k_char);
-         salida << EncriptarCesar(letra, valor_k_int);
-         fichero.get(letra);        
-  }
-  fichero.close();
-  }
+        char *valor_k_char = argv[4];
+        int valor_k_int = atoi(valor_k_char);
+        salida << EncriptarCesar(letra, valor_k_int);
+        fichero.get(letra);        
+      }
+    fichero.close();
+    }
   return 0;
-}
+  }
 
-if(argc==6 && (strcmp(argv[3], "2") == 0) && (strcmp(argv[5], "-") == 0)) {
+  if(argc==6 && (strcmp(argv[3], "2") == 0) && (strcmp(argv[5], "-") == 0)) {
     CrearArchivo(argv[2]);
     const std::string nfichero = argv[1];
     const std::string nfsalida = argv[2];
@@ -82,13 +82,13 @@ if(argc==6 && (strcmp(argv[3], "2") == 0) && (strcmp(argv[5], "-") == 0)) {
     if(!fichero.eof()) {
       fichero.get(letra);
       while (!fichero.eof()) {
-         char *valor_k_char = argv[4];
-         int valor_k_int = atoi(valor_k_char);
-         salida << DesencriptarCesar(letra, valor_k_int);
-         fichero.get(letra);
-  }
-  fichero.close();
-  }
+        char *valor_k_char = argv[4];
+        int valor_k_int = atoi(valor_k_char);
+        salida << DesencriptarCesar(letra, valor_k_int);
+        fichero.get(letra);
+      }
+    fichero.close();
+    }
   return 0;
-}
+  }
 }
