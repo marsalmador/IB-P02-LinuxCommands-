@@ -30,30 +30,30 @@ char EncriptarCesar(char letra, int k){
   char resultado;
   if(letra!=char(32)){
     if(isupper(letra)){
-        resultado += char(int(letra+k-65)%26 +65);
+      resultado += char(int(letra+k-65)%26 +65);
     }
-      else{
-        resultado += char(int(letra+k-97)%26 +97);
-      }
+    else{
+      resultado += char(int(letra+k-97)%26 +97);
+    }
   }
   else{ 
     return char(32);
   }
-  return resultado;
+return resultado;
 }
 
 char DesencriptarCesar(char letra, int k){
   char resultado;
   if(letra!=char(32)){
     if(isupper(letra)){
-        resultado += char(int(letra-k-65)%26 +65);
+      resultado += char(int(letra-k-65)%26 +65);
     }
-      else{
-        resultado += char(int(letra-k-97)%26 +97);
-      }
+    else{
+      resultado += char(int(letra-k-97)%26 +97);
+    }
   }
   else{
     return char(32);
   }
-  return resultado;
+return resultado;
 }
